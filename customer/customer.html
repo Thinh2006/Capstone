@@ -3,9 +3,200 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Store page</title>
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- my css -->
+    <link rel="stylesheet" href="../asset/css/style.css">
 </head>
 <body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top mb-5 py-4">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                <i class="fa-solid fa-robot me-3"></i>Cyber Phone</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav nav-left">
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">Admin</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav nav-right">
+                    <li class="nav-item">
+                        <a class="nav-link">
+                            <i class="fa-solid fa-xl fa-shopping-cart"></i>
+                        </a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+            </nav>
+    </header>
+    <div class="carousel">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-6 text me-5">
+                    <h5 class="display-4 mb-4 font-weight-bold text-white">Iphone 14 pro max</h5>
+                    <p class="h5 aa mb-4 pb-3 text-white-50">For iPhone 14 Pro Max Aesthetic Quotes Case,Aesthetic Rainbow Art and Positive Inspirational Christian Quotes Bible Verse Case for Girls Women with Soft TPU Slim Protective Case for iPhone 14 Pro Max</p>
+                    <h3 class="text-white mb-5">1325$</h3>
+                    <div class="d-flex">
+                        <a href="#" class="btn btn-lg btn-danger"><i class="lni lni-play-store me-2"></i> Find out more!</a>
+                      </div>
+                </div>
+                <div class="col-6 phone-image my-5">
+                    <img src="../asset/scss/img/iphone-14-pro-max-den-thumb-600x600-removebg-preview.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container cards" id="content-wrap">
+      <main role="main" class="pb-5 mb-5">
+        <div class="container">
+          <div class="my-5">
+            <div class="container">
+              <select class="form-select w-25 mb-5" id="selectList" aria-label="Default select example">
+                <option value="all">All Brands</option>
+                <option value="Apple">Apple</option>
+                <option value="Samsung">Samsung</option>
+              </select>
+            </div>
+            <div class="row mx-0 gy-4" id="phoneList">      
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer class="text-center text-lg-start bg-dark text-light gradient-custom">
+      <!-- Section: Social media -->
+      <section class="d-flex justify-content-center p-4 border-bottom">
+        <!-- Left -->
+        <div class="me-5 d-none d-lg-block">
+          <span>Get connected with us on social networks:</span>
+        </div>
+        <!-- Left -->
+        <!-- Right -->
+        <div>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-google"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+        <!-- Right -->
+      </section>
+      <!-- Section: Social media -->
+      <!-- Section: Links  -->
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+          <!-- Grid row -->
+          <div class="row mt-3">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <!-- Content -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                <i class="fa-lg fa-solid fa-robot me-3"></i>Cyber Phone
+              </h6>
+              <p>
+                We pride ourselves on our efficiency and hard work, but most of all our
+                ability to source you the best quality and best value products and devices
+                in the market.
+              </p>
+            </div>
+            <!-- Grid column -->
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Brands</h6>
+              <p>
+                <a href="#!" class="text-reset">iPhone</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Sumsung</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Xiaomi</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Oppo</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Useful links</h6>
+              <p>
+                <a href="#!" class="text-reset">Pricing</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Settings</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Orders</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Help</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4 contact-text">Contact</h6>
+              <p><i class="fas fa-home me-3"></i> Da Nang, Thanh Khe, VN</p>
+              <p>
+                <i class="fas fa-envelope me-3"></i>
+                cyberphone@mail.com
+              </p>
+              <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+              <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+        </div>
+      </section>
+      <!-- Section: Links  -->
+      <!-- Copyright -->
+      <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05)">
+        © 2022 Copyright:
+        <a class="text-reset fw-bold" href="">Cyber Phone</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
     
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!-- axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./model/Product.js"></script>
+    <script src="./controller/customer.js"></script>
+
 </body>
 </html>
