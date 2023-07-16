@@ -1,0 +1,18 @@
+.carousel {
+    background-image: linear-gradient(
+            rgba(29, 38, 113, 0.8),
+            rgba(195, 55, 100, 0.8)
+        ),
+        url(../img/Best-Buy-Mobile-store.jpg);
+    background-size: cover;
+    background-position: center;
+
+    h5 {
+        margin-top: 100px;
+    }
+
+    .phone-image {
+        width: 500px;
+    }
+
+}

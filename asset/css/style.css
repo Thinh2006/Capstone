@@ -1,1 +1,120 @@
-/*# sourceMappingURL=style.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  vertical-align: middle;
+}
+
+footer.gradient-custom {
+  background: linear-gradient(rgba(29, 38, 113, 0.8), rgba(195, 55, 100, 0.8));
+}
+
+header .nav-left {
+  width: 100%;
+}
+header .navbar {
+  background: rgba(0, 0, 0, 0.8);
+}
+header .navbar .noti__cart {
+  position: relative;
+  padding: 0.2em 0.5em;
+  top: -40px;
+  left: 20px;
+}
+
+.carousel {
+  background-image: linear-gradient(rgba(29, 38, 113, 0.8), rgba(195, 55, 100, 0.8)), url(../img/Best-Buy-Mobile-store.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.carousel h5 {
+  margin-top: 100px;
+}
+.carousel .phone-image {
+  width: 500px;
+}
+
+.cards .card img {
+  padding-top: 10px;
+  width: 100%;
+  height: 200px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  display: block;
+}
+
+#cart-modal {
+  position: fixed;
+  left: 100%;
+  top: 10%;
+  bottom: 0;
+  transform: translate(-100%, 0);
+  width: 500px;
+  height: 90%;
+  overflow: auto;
+  transition: all 0.25s ease-in-out;
+}
+#cart-modal .product {
+  border-bottom: 1px solid #dee2e6;
+  padding-top: 10px;
+}
+#cart-modal .product__up {
+  display: flex;
+}
+#cart-modal .product__up img {
+  width: 120px;
+  height: 120px;
+  border-radius: 3px;
+  background-color: #fff;
+}
+#cart-modal .product__mid {
+  display: flex;
+  justify-content: space-between;
+}
+#cart-modal .product__mid .product__quantity .minus, #cart-modal .product__mid .product__quantity .plus {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+  line-height: 18px;
+}
+#cart-modal .modal-footer {
+  border-top: none;
+  background: #f7f7f7;
+}
+#cart-modal .modal-footer .btn {
+  padding: 10px !important;
+}
+#cart-modal .modal-footer .form__footer {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  margin-top: 24px;
+}
+#cart-modal .cart__totals th {
+  padding-right: 20px;
+}
+#cart-modal .cart__totals #priceTotal {
+  color: red;
+}
+
+#payModal .modal-body {
+  text-align: right;
+}
+#payModal .modal-body .icon {
+  text-align: center;
+  font-size: 100px;
+}
+#payModal .modal-body .span__order {
+  text-align: center;
+  font-size: 40px;
+}/*# sourceMappingURL=style.css.map */

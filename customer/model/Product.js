@@ -1,4 +1,5 @@
 function Product(
+    _id,
     _name,
     _price,
     _screen,
@@ -8,6 +9,7 @@ function Product(
     _desc,
     _type
 ) {
+    this.id = _id;
     this.name = _name;
     this.price = _price;
     this.screen = _screen;

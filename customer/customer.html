@@ -29,13 +29,14 @@
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="#">Admin</a>
+                    <a class="nav-link active" href="#">Admin</a>
                     </li>
                 </ul>
                 <ul class="navbar-nav nav-right">
                     <li class="nav-item">
-                        <a class="nav-link">
+                        <a class="nav-link active" type="button" data-toggle="modal" data-target="#cart-modal">
                             <i class="fa-solid fa-xl fa-shopping-cart"></i>
+                            <span class="noti__cart" id="noti__span">0</span>
                         </a>
                     </li>
                 </ul>
@@ -77,6 +78,85 @@
         </div>
       </main>
     </div>
+
+    <!-- Modal cart-->
+    <div class="modal fade" id="cart-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4>SHOPPING CART</h4>
+            <button type="button" class="close btn btn-danger" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="cart" id="cart">
+              <!-- <div class="cart__overlay"></div> -->
+              <div class="cart__content">
+                <div class="card__info">
+                  <div class="products" id="products__info"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <div class="cart__totals">
+              <table class="totals">
+                <tbody>
+                  <tr>
+                    <th class="align-left font-normal tertiary">Subtotal</th>
+                    <td class="align-right" id="subTotal"></td>
+                  </tr>
+                  <tr>
+                    <th class="align-left font-normal tertiary">
+                      Shipping <small>(estimated)</small>
+                    </th>
+                    <td class="align-right" id="shipping"></td>
+                  </tr>
+                  <tr>
+                    <th class="align-left font-normal tertiary">
+                      Tax <small>(estimated)</small>
+                    </th>
+                    <td class="align-right" id="tax"></td>
+                  </tr>
+                  <tr>
+                    <th class="align-left">Total</th>
+                    <td class="align-right" id="priceTotal"></td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="form__footer">
+                <button class="btn btn-primary yellow-btn" data-toggle="modal" data-target="#payModal" id="payNow">Pay Now</button>
+                <button class="btn btn-warning ms-3 me-5" data-dismiss="modal">Continue Shopping</button>
+                <button class="btn btn-secondary red-btn" onclick="emptyCart()" id="emptyCart">
+                  <i class="fa-solid fa-trash me-2"></i> Empty Cart
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal paynow -->
+    <div class="modal fade" id="payModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button type="button" class="close btn btn-danger" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="icon">
+              <i id="icon__img"></i>
+            </div>
+            <div class="span__order">
+              <span class="order__content"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <footer class="text-center text-lg-start bg-dark text-light gradient-custom">
       <!-- Section: Social media -->
       <section class="d-flex justify-content-center p-4 border-bottom">
@@ -197,6 +277,7 @@
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="./model/Product.js"></script>
     <script src="./controller/customer.js"></script>
+    <script src="./model/CartItem.js"></script>
 
 </body>
 </html>
