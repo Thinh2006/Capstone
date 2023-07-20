@@ -227,6 +227,9 @@
     background-image: linear-gradient(250deg, #e3ecfd, #fff0e8);
     @media  screen and (max-width:390px) {
         width: 100%;
+        .form-group{
+            width: 100%;
+        }
     }
 }
 }
